@@ -99,7 +99,7 @@ githubRequest.addEventListener('load', function (event)
         projectList.appendChild(project);
     };
 
-    //Stetch Goal: Transform your repository names into `<a>` tags that link to GitHub
+    //Stretch Goal: Transform your repository names into `<a>` tags that link to GitHub
     /* for (i = 0; i < repositories.length; i++)
     {
         const project = document.createElement('li');

@@ -6,7 +6,7 @@ const copyright = document.createElement('p');
 copyright.innerHTML = (`&copy Armani Johnson ${thisYear}`);
 footer.appendChild(copyright);
 
-const skills = ["HTML", "CSS", "Javascript"];
+const skills = ["HTML", "CSS", "Javascript", "Node", "Express"];
 const skillsSection = document.getElementById('skills');
 const skillsList = skillsSection.querySelector('ul');
 for (i = 0; i < skills.length; i++) {
@@ -112,7 +112,7 @@ const projectList = projectSection.querySelector('ul');
 fetch('https://api.github.com/users/Armanchi/repos')
     .then(res => res.json())
     .then(data => {
-            for (let i = 0; i < data.length; i++) {
+            for (let i = 4; i < 9; i++) {
             const project = document.createElement('li');
             const projectLink = document.createElement('a');
             projectLink.textContent = data[i].name;

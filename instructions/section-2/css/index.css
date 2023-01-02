@@ -1,18 +1,21 @@
 body {
-    background-image: linear-gradient(to top, #000033, #222255);
-    background-repeat: no-repeat;
-    color: white;
-    font-family: 'NTR', sans-serif; ;
+    background-color:#fff1e6;
+    color: #ddbea9;
+    font-family: 'Roboto Mono', monospace;
     text-align: left;
     margin: 10px; 
+
 }
-/* moon image and details */
+
+
+
+/* moon image and details
 #moon-container{
     display: flex;
     margin: auto;
 }
 #moon{
-     width: 180px;
+    width: 180px;
     height: 180px; 
     border-radius: 50%;
     animation: shine 2s ease-in-out infinite;
@@ -93,7 +96,7 @@ body {
     100% {
         opacity: 0;
     }
-}
+} */
 /* title */
 #container-intro{
     margin: 0;
@@ -101,19 +104,17 @@ body {
     flex-wrap: wrap;
 }
 
-*, :after, :before {
-    box-sizing: border-box;
-}
-.typing-effect {
+ .typewriter {
     display:inline-block;
-    width: 16ch; 
-    animation: typing 3s steps(22), blink 1s step-end infinite alternate;
+    width: 24ch; 
+    animation: typing 3s steps(40), blink 1s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
-    border-right: 3px solid;
-    font-size: 70px;
+    border-right: 1px solid;
+    font-size: 32px;
     line-height: 5px;
-    margin-top: 30px;
+    margin-top: 10px;
+    margin: 40px;
     align-items: center;
   }
   @keyframes typing {
@@ -126,9 +127,11 @@ body {
     50% {
       border-color: transparent
     }
-  }
-/*  
-message box that links to email */
+  } */
+ 
+
+
+
 #message-link{
     font-family: 'ntr', sans-serif;
     font-size: 20px;
@@ -142,7 +145,7 @@ message box that links to email */
     border: 1px solid #b1d4f1;
     transition-duration: 1s;
     align-self: center;
-    margin: 10px;
+    margin: 40px;
 }
 #an{
     color:#222255;

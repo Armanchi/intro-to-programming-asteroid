@@ -1,6 +1,6 @@
 body {
-    background-color:#fff1e6;
-    color: #ddbea9;
+    background-color:#095256;
+    color: #c0b298;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;
@@ -19,8 +19,8 @@ body {
 
  .typewriter {
     display:inline-block;
-    width: 24ch; 
-    animation: typing 3s steps(40), blink 1s step-end infinite alternate;
+    width: 17ch; 
+    animation: typing 3s steps(30), blink 1s step-end infinite alternate;
     white-space: nowrap;
     overflow: hidden;
     border-right: 1px solid;
@@ -41,44 +41,63 @@ body {
       border-color: transparent
     }
   } 
+.intro-span{
+    display: flex;
+    align-items: center;
+    height: auto;
+}
+#intro-title{
+    color:#a5a58d; 
+    margin: 40px;
+    margin-top: -36px;
+    font-weight: 300;
+    font-size: 28px;
+}
+/* CSS */
+button{
+  appearance: none;
+  background-color: transparent;
+  border: 2px solid #1A1A1A;
+  border-radius: 15px;
+  box-sizing: border-box;
+  color: #a5a58d;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 16px;
+  font-weight: 600;
+  line-height: normal;
+  margin: 0;
+  min-height: 60px;
+  min-width: 0;
+  outline: none;
+  padding: 16px 24px;
+  text-align: center;
+  text-decoration: none;
+  transition: all 300ms cubic-bezier(.23, 1, 0.32, 1);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 50%;
+  will-change: transform;
+}
 
-button {
-    --b: 3px;   /* border thickness */
-    --s: .45em; /* size of the corner */
-    --color: #a5a58d;
-    
-    padding: calc(.5em + var(--s)) calc(.9em + var(--s));
-    color: var(--color);
-    --_p: var(--s);
-    background:
-      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--color) 0)
-      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
-    transition: .3s linear, color 0s, background-color 0s;
-    outline: var(--b) solid #0000;
-    outline-offset: .6em;
-    font-size: 16px;
-  
-    border: 0;
-  
-    user-select: none;
-    -webkit-user-select: none;
-    touch-action: manipulation;
-  }
-  
-button:hover,
-button:focus-visible{
-    --_p: 0px;
-    outline-color: var(--color);
-    outline-offset: .05em;
-  }
-  
+button:disabled {
+  pointer-events: none;
+}
+
+button:hover {
+  color: #fff;
+  background-color: #1A1A1A;
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  transform: translateY(-2px);
+}
+
 button:active {
-    background: var(--color);
-    color: #fff;
-  }
+  box-shadow: none;
+  transform: translateY(0);
+}
 
 #message-link{
-    font-family: 'ntr', sans-serif;
     color: #ddbea9;
     font-size: 20px;
     font-weight: bolder;
@@ -92,6 +111,7 @@ button:active {
 #an{
     color:#222255;
     background-color: transparent;
+    margin-top: -30px;
 }
 
 /* navigation bar */
@@ -115,6 +135,7 @@ button:active {
 #navbar :hover{
     color: #a5a58d;
 }
+
 /* 
 intro section */
 #about{
@@ -162,9 +183,9 @@ intro section */
 #sk-title{
     color: #a5a58d;
     font-size: 50px;
-    width:100vh;
+    max-width:600px;
     padding-top: 80px; 
-    margin: 10px;  
+    margin: 5px;  
 }
 #sk-list{
     font-size: 20px;

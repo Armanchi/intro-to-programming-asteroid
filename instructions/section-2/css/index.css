@@ -86,7 +86,7 @@ button:disabled {
 }
 
 button:hover {
-  color: #fff;
+  color: #c0b298;
   background-color: #1A1A1A;
   box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
   transform: translateY(-2px);
@@ -98,7 +98,7 @@ button:active {
 }
 
 #message-link{
-    color: #ddbea9;
+    color: #c0b298;
     font-size: 20px;
     font-weight: bolder;
     padding: 10px 30px;
@@ -133,7 +133,7 @@ button:active {
     font-size: 18px;
 }
 #navbar :hover{
-    color: #a5a58d;
+    color: black;
 }
 
 /* 
@@ -153,7 +153,8 @@ intro section */
     margin: 20px;
 }
 #about-descript{
-    font-size: 22px;
+    color: black;
+    font-size: 20px;
     padding: 10px;
     margin: 0;
     max-width: 600px;
@@ -188,8 +189,8 @@ intro section */
     margin: 5px;  
 }
 #sk-list{
+    color: black;
     font-size: 20px;
-    font-weight: 700px;
     line-height: 1.5;
     list-style-type: none;
     flex-wrap: wrap;
@@ -305,7 +306,8 @@ h2, img {
 #foot{
     text-align: center;
     color: #ddbea9;
-    position: relative;
+    font-size: 16px;
+    padding-bottom: 40px;
     width: 100%;
     display: block;
 }
@@ -313,8 +315,7 @@ p.copyright {
     position: absolute;
     width: 100%;
     color: #a5a58d;
-    line-height: 40px;
-    font-size: 0.7em;
+    font-size: 16px;
     text-align: center;
     bottom:0;
 }
@@ -323,19 +324,14 @@ p.copyright {
     margin-top: 15px;
     align-content: center;  
 }
-.menu-item{
-    list-style-type: none;
-    display: inline-block;
-    align-items: center;  
-}
 
 @media only screen and (max-width: 992px) {
     html, body {
         overflow-x:hidden;
      }
     body{
-    background-color:#fff1e6;
-    color: #ddbea9;
+    background-color:#095256;
+    color: #c0b298;
     font-family: 'Roboto', sans-serif;
     display: flex;
     flex-direction: column;

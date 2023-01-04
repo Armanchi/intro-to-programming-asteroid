@@ -306,10 +306,10 @@ h2, img {
 #foot{
     text-align: center;
     color: #ddbea9;
-    font-size: 16px;
-    padding-bottom: 40px;
+    font-size: 12px;
     width: 100%;
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 p.copyright {
     position: absolute;
@@ -321,7 +321,6 @@ p.copyright {
 }
 #footer-menu{
     display: block;
-    margin-top: 15px;
     align-content: center;  
 }
 
